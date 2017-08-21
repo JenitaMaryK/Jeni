@@ -19,12 +19,9 @@ public class Add {
 			String Brand = scn.nextLine();
 			if(hm.containsValue(Brand))
 			{
-				//
 				System.out.println("Quantity:");
 				scn = new Scanner(System.in);
 				int Quantity = scn.nextInt();
-				
-				
 			}
 			else
 			{
@@ -35,13 +32,6 @@ public class Add {
 			scn = new Scanner(System.in);
 			int Quantity = scn.nextInt();
 			New n = new New(Brand, Price, Quantity);
-			/*int j = i;
-			while (j < 2) {
-				if (hm.containsKey(i)) {
-					i++;
-				}
-				j++;
-			}*/
 			hm.put(i, n);
 			}
 		}
